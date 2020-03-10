@@ -7,17 +7,14 @@ const app = express()
 
 //ROUTES
     app.get('/',(req,res)=>{
-        res.render('index')
+        var nome = "Elias Juk"
+        var lang = "JavaScript"
+        res.render('index',{
+            nome: nome,
+            lang: lang,
+            pais: 'Brasil'
+        })
     })
-
-    app.get('/home',(req,res)=>{
-        res.render('home')
-    })
-
-    app.get('/perfil',(req,res)=>{
-        res.render('principal/perfil')
-    })
-
 
 //CONFIG
     //SERVER
