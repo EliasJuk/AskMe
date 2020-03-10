@@ -10,6 +10,15 @@ const app = express()
         res.render('index')
     })
 
+    app.get('/home',(req,res)=>{
+        res.render('home')
+    })
+
+    app.get('/perfil',(req,res)=>{
+        res.render('principal/perfil')
+    })
+
+
 //CONFIG
     //SERVER
         app.listen(4587,(err)=>{
