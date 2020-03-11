@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const bodyParser = require("body-parser")
 const connection = require('./database/database')
+const perguntaModel = require('./database/Pergunta')
 
 //VIEW ENGINE
     app.set('view engine','ejs') // view engine
@@ -25,7 +26,7 @@ const connection = require('./database/database')
     })
 
 //CONFIG
-    //SERVER
+    //SERVER - Rodando na porta 8081
         app.listen(8081,(err)=>{
             if(err){
                 Console.log('Erro'+err)
@@ -42,3 +43,4 @@ const connection = require('./database/database')
             .catch((err) => {
                 console.log("Erro ao se conectar"+err)
             })
+    //OUTRAS
