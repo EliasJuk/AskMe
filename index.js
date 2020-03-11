@@ -19,7 +19,10 @@ const app = express()
         var produtos = [
             {nome: "Doritos", preco: 3.50},
             {nome: "Coca-cola", preco: 3.80},
-            {nome: "Leite", preco: 1.50}
+            {nome: "Leite", preco: 1.50},
+            {nome: "Carne", preco: 6.00},
+            {nome: "Achocolatado", preco: 2.50},
+            {nome: "Café", preco: 4.50},
         ]
         res.render('index',{
             nome: nome,
