@@ -12,7 +12,24 @@ const app = express()
         res.render('index',{
             nome: nome,
             lang: lang,
-            pais: 'Brasil'
+            pais: 'Brasil',
+            estado: 'PR',
+            empresa: '',
+            ano: 2020
+        })
+    })
+
+    app.get('/:nome',(req,res)=>{
+        var nome = req.params.nome
+        //var nome = "Elias Juk"
+        var lang = "JavaScript"
+        res.render('index',{
+            nome: nome,
+            lang: lang,
+            pais: 'Brasil',
+            estado: 'PR',
+            empresa: '',
+            ano: 2020
         })
     })
 
@@ -22,6 +39,6 @@ const app = express()
             if(err){
                 Console.log('Erro'+err)
             }else{
-                console.log('OK')
+                console.log('Rodando na porta 4587')
             }
         })
