@@ -8,12 +8,22 @@
 <body>
     <h1>HOME</h1>
 
-    <p>Nome:<%= nome %></p>
-    <p>Lang Favorita: <%= lang %></p>
-    <p>Pais: <%= pais %></p>
-    <p>Estado: <%= estado %></p>
-    <p>Ano:  <%= ano %></p>
+    <p>Nome:<%=nome%></p>
+    <p>Lang Favorita: <%=lang%></p>
+    <p>Pais: <%=pais%></p>
+    <p>Estado: <%=estado%></p>
+    <p>Ano:  <%=ano%></p>
     <p>Empresa: <%=empresa%></p>
+    
+    <% if(msg == true){ %>
+        <h3>Isso é uma mensagem de erro</h3>
+    <%} else {%>
+        <h3>Nenhum erro</h3>
+    <%}%>
 
+    <% produtos.forEach(function(produto) { %>
+        <%= produto.nome %>
+        <%= produto.preco %><br/>
+    <% }) %>
 </body>
 </html>
