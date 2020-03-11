@@ -3,7 +3,8 @@ const express = require('express')
 const app = express()
 
 //VIEW ENGINE
-    app.set('view engine','ejs')
+    app.set('view engine','ejs') //view engine
+    app.use(express.static('public')) //define o local dos arquivos estaticos
 
 //ROUTES
     app.get('/',(req,res)=>{
