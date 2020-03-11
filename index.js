@@ -1,13 +1,12 @@
 const express = require('express')
-//const mysql = require('mysql')
 const app = express()
 const bodyParser = require("body-parser")
-
+const connection = require('./database/database')
 
 //VIEW ENGINE
     app.set('view engine','ejs') // view engine
     app.use(express.static('public')) //define o local dos arquivos estaticos
-    app.use(bodyParser.urlencoded({extended: false})) // decodifica dados enviados pelo formulario
+    app.use(bodyParser.urlencoded({extended: false})) //decodifica dados enviados pelo formulario
     app.use(bodyParser.json()) //permite ler dados de formularios enviados via JSON
 
 //ROUTES
@@ -34,3 +33,14 @@ const bodyParser = require("body-parser")
                 console.log('Rodando na porta 8081')
             }
         })
+    //DATABASE
+        connection
+            .authenticate()
+            .then(() => {
+                console.log("Conexao realizada com sucesso")
+            })
+            .catch((err) => {
+                console.log("Erro ao se conectar"+err)
+            })
+
+
