@@ -11,9 +11,13 @@ const app = express()
         res.render('index')
     })
 
+    app.get('/ask',(req,res)=>{
+        res.render('ask')
+    })
+
 //CONFIG
     //SERVER
-        app.listen(4587,(err)=>{
+        app.listen(8081,(err)=>{
             if(err){
                 Console.log('Erro'+err)
             }else{
