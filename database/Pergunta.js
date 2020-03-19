@@ -5,14 +5,17 @@ const connection = require('./database')
     const Pergunta = connection.define('perguntas',{ //Conexao e nome da tabela
         titulo: {
             type: Sequelize.STRING,
-            allowNull: false
+            allowNull: false,
         },
-        description:{
+        descricao:{
             type: Sequelize.TEXT,
-            allowNull: false
+            allowNull: false,
         }
     })
     
 //CRIA A TABELA NO BANCO
-    Pergunta.sync({force: false}) //Nao força a criação da tabela caso ela já exista
-        .then(()=>{})
+    Pergunta.sync({force: false}).then(()=>{})
+    //Nao força a criação da tabela caso ela já exista
+
+module.exports = Pergunta
+

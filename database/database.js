@@ -1,6 +1,6 @@
 const Sequilize = require('sequelize')
 
-const connection = new Sequilize('askme', 'root', 'root',{
+const connection = new Sequilize('askme', 'root', null,{
     host: 'localhost',
     dialect: 'mysql'
 })
