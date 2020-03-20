@@ -3,6 +3,7 @@ const app = express()
 const bodyParser = require("body-parser")
 const connection = require('./database/database')
 const Pergunta = require('./database/Pergunta')
+const Resposta =  require('./database/Resposta')
 
 //DATABASE
     connection
@@ -58,7 +59,9 @@ const Pergunta = require('./database/Pergunta')
         }) //Metodo para pegar um unico dado
         .then(pergunta => { //mesmo que não ache nada ele recebe o valor undefined
             if(pergunta != undefined){ //Caso seja # de undefined ele resolve no if
-                res.render("answer")
+                res.render("answer",{
+                    pergunta: pergunta //passa a variavel pergunta para o front
+                })
             }else{// Não encontada | undefined
                 res.redirect("/") //Caso não encontre uma pergunta o id X ele retorna para a rota raiz
             }
