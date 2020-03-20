@@ -59,13 +59,33 @@ const Resposta =  require('./database/Resposta')
         }) //Metodo para pegar um unico dado
         .then(pergunta => { //mesmo que não ache nada ele recebe o valor undefined
             if(pergunta != undefined){ //Caso seja # de undefined ele resolve no if
-                res.render("answer",{
-                    pergunta: pergunta //passa a variavel pergunta para o front
-                })
-            }else{// Não encontada | undefined
+                //CARREGA TODAS RESPOSTAS CORRESPONDENTES A ESSA PERGUNTA
+                Resposta.findAll({
+                        where: { perguntaId: pergunta.id },
+                        order: [ ['id','DESC'] ]
+                    }).then( respostas => {
+                        //CARREGA PERGUNTAS E EXIBE MA TELA
+                        res.render("answer",{
+                            pergunta: pergunta, //passa a variavel pergunta para o front
+                            respostas: respostas //passa as respostas para a view/front
+                        })
+                    });
+            }else{
+                // Não encontada | undefined
                 res.redirect("/") //Caso não encontre uma pergunta o id X ele retorna para a rota raiz
             }
-        }) //chama caso ache um valor id iqual a variavel
+        })
+    })
+
+    app.post("/answers", (req,res) => {
+        var corpo = req.body.corpo //name: corpo
+        var perguntaId = req.body.pergunta //name: pergunta
+        Resposta.create({
+            corpo: corpo,
+            perguntaId: perguntaId
+        }).then( () => {
+            res.redirect('/answer/'+perguntaId)
+        })
     })
 
 //CONFIG
