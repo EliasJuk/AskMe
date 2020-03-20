@@ -24,7 +24,9 @@ const Pergunta = require('./database/Pergunta')
 //ROUTES
     //Principal
     app.get('/',(req,res) => {
-        Pergunta.findAll({ raw: true }).then(perguntas => {
+        Pergunta.findAll({ raw: true, order:[
+        ['id','DESC']  //METODO DE ORDENAMENTO DAS PERGUNTAS  
+    ]}).then(perguntas => {
             res.render('index',{
                 perguntas: perguntas
             })
@@ -47,6 +49,21 @@ const Pergunta = require('./database/Pergunta')
                 res.redirect('/')
             })
         })
+
+    //RESPONDER
+    app.get("/answer/:id",(req,res)=>{
+        var id = req.params.id;
+        Pergunta.findOne({
+            where: {id: id} //busca na tabela um valor = variavel id
+        }) //Metodo para pegar um unico dado
+        .then(pergunta => { //mesmo que não ache nada ele recebe o valor undefined
+            if(pergunta != undefined){ //Caso seja # de undefined ele resolve no if
+                res.render("answer")
+            }else{// Não encontada | undefined
+                res.redirect("/") //Caso não encontre uma pergunta o id X ele retorna para a rota raiz
+            }
+        }) //chama caso ache um valor id iqual a variavel
+    })
 
 //CONFIG
     //SERVER - Rodando na porta 8081
