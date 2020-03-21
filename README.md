@@ -8,9 +8,19 @@
 
 >   Nesta tela esta contida todas as perguntas realizadas
 
+![Tela Perguntas](https://github.com/EliasJuk/AskMe/blob/master/readme/002.png)
+
+### Tela Pergunta
+
+>   Nesta tela esta você pode realizar uma pergunta que aparecera na tela principal para outras pessoas possam responde-la
+
 ![Tela Perguntas](https://github.com/EliasJuk/AskMe/blob/master/readme/001.png)
 
 ### Tela Respostas
+
+>   Nesta tela esta contida todas as perguntas seguido das respostas, nela você pode responder uma pergunta
+
+![Tela de Respostas ](https://github.com/EliasJuk/AskMe/blob/master/readme/002.png)
 
 >   Nesta tela esta contida todas as perguntas seguido das respostas, nela você pode responder uma pergunta
 
