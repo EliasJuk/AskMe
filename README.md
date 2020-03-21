@@ -18,14 +18,11 @@
 
 ### Tela Respostas
 
->   Nesta tela esta contida todas as perguntas seguido das respostas, nela você pode responder uma pergunta
+>   Nesta pagina esta contida todas as perguntas seguido das respostas, nela você pode responder uma pergunta feita por outro usuario
 
-![Tela de Respostas ](https://github.com/EliasJuk/AskMe/blob/master/readme/002.png)
+![Tela de Respostas ](https://github.com/EliasJuk/AskMe/blob/master/readme/003.png)
 
->   Nesta tela esta contida todas as perguntas seguido das respostas, nela você pode responder uma pergunta
 
-![Tela de Respostas ](https://github.com/EliasJuk/AskMe/blob/master/readme/002.png)
-
-## Testando o projeto
+# Testando o projeto
 >   Certifiquece que seu banco de dados esteja rodando e possua com database com o nome **askme**,
 >   para iniciar digite o comando **node** ou **nomedom** **index.js** no terminal dentro da pasta do projeto
