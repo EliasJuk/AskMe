@@ -24,5 +24,4 @@
 
 
 # Testando o projeto
->   Certifiquece que seu banco de dados esteja rodando e possua com database com o nome **askme**,
->   para iniciar digite o comando **node** ou **nomedom** **index.js** no terminal dentro da pasta do projeto
+>   Certifiquece que seu banco de dados esteja rodando e possua com database com o nome **askme**, para iniciar digite o comando **node** ou **nomedom** seguido de **index.js** no terminal dentro da pasta do projeto, se ocorreu tudo certo o projeto estará disponivel em localhost:8081 em seu navegador
