@@ -1,3 +1,30 @@
+# ASKME
+
+
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/EliasJuk/AskMe">	
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/EliasJuk/AskMe">
+	
+  <a href="https://www.linkedin.com/in/eliaspjuk/">
+    <img alt="Made by EliasJuk" src="https://img.shields.io/badge/made%20by-EliasJuk-%2304D361">
+  </a>
+  
+
+
+
+  
+  <a href="https://github.com/EliasJuk/AskMe/issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/EliasJuk/AskMe">
+  </a>
+  
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen"> 
+<p>
+
+
+
+
+
+
 # About AskMe
 >   O Askme é uma plataforma de perguntas e respostas desenvolvida com NodeJS, Express e EJS
 >   Nela você pode realizar perguntas onde outras pessoas podem repondela, ou você pode ajudar outras pessoas respondendo suas duvidas
