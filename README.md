@@ -1,5 +1,5 @@
-# ASKME
 
+![Tela Perguntas](https://github.com/EliasJuk/AskMe/blob/master/readme/askme.png)
 
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/EliasJuk/AskMe">	
