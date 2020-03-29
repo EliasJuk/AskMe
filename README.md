@@ -19,7 +19,7 @@
 <p>
 	
 <p align="center">
-	<a href=""><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
+	<a href="#"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
 </p>
 
 
