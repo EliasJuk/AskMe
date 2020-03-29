@@ -1,5 +1,6 @@
-
-![Tela Perguntas](https://github.com/EliasJuk/AskMe/blob/master/readme/askme.png)
+<h1 align="center">
+    <img alt="AskMe" title="#AskMe" src="readme/askme.png" width="250px" />
+</h1>
 
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/EliasJuk/AskMe">	
@@ -29,7 +30,11 @@
 >   O Askme é uma plataforma de perguntas e respostas desenvolvida com NodeJS, Express e EJS
 >   Nela você pode realizar perguntas onde outras pessoas podem repondela, ou você pode ajudar outras pessoas respondendo suas duvidas
 
-## As telas ficam da seguinte forma
+---
+
+## 🔖 Layout
+
+<p>&nbsp;</p>
 
 ### Tela Principal
 
