@@ -10,9 +10,6 @@
     <img alt="Made by EliasJuk" src="https://img.shields.io/badge/made%20by-EliasJuk-%2304D361">
   </a>
   
-
-
-
   
   <a href="https://github.com/EliasJuk/AskMe/issues">
     <img alt="Repository issues" src="https://img.shields.io/github/issues/EliasJuk/AskMe">
@@ -22,19 +19,15 @@
 <p>
 
 
-
-
-
-
 # About AskMe
 >   O Askme é uma plataforma de perguntas e respostas desenvolvida com NodeJS, Express e EJS
 >   Nela você pode realizar perguntas onde outras pessoas podem repondela, ou você pode ajudar outras pessoas respondendo suas duvidas
 
 ---
 
-## 🔖 Layout
-
 <p>&nbsp;</p>
+
+## 🔖 Layout
 
 ### Tela Principal
 
